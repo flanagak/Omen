@@ -23,7 +23,7 @@
 
 addon.name    = 'Omen'
 addon.author  = 'flanagak'
-addon.version = '1.0'
+addon.version = '1.0.1'
 addon.desc    = 'Omen is an addon that creates a window that tracks the current floor\'s Primary and Secondary objectives.';
 
 require('common');
@@ -249,7 +249,6 @@ ashita.events.register('packet_in', 'packet_in_cb', function (e)
 		else
 			if (omen.FontObject ~= nil) then
 				omen.FontObject.visible = false;
-				omen.FontObject:destroy();
 			end			
 		end
         return;
